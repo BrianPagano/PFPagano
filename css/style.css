@@ -1,0 +1,267 @@
+/*Aplicamos reset*/
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general de body*/
+body {
+   /*  font-family:sans-serif;*/
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Estilo del header*/
+
+header nav div div div .color-menu:hover {
+    border-bottom: 2px solid black;
+    color: black;  
+}
+
+header nav div img {
+    width: 150px;
+}
+
+
+/* Estilos de main */
+/*Estilos Generales de main*/
+main div h1 { 
+    text-align: center;
+    font-size: 50px;
+    color: whitesmoke;
+    font-family: serif;
+}
+main h2 { 
+    text-align: center;
+    font-size: 2vw;
+    padding-bottom: 20px;
+    color: whitesmoke;
+}
+
+/*Estilos para portadas de Main*/
+main .Portada {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/*Pagina de INICIO*/
+/* Estilo Portada pagina de Inicio */
+
+main .PortadaInicio {
+    background-image: url(../img/edificios.png);
+    background-size: cover;
+    background-color: rgb(68, 82, 95);
+    background-blend-mode: soft-light;
+}
+
+
+
+/*Estilo menu CONTACTO*/
+/*Estilo Portada Contacto*/
+
+main .PortadaContacto {
+    background-image: url(../img/contactame.jpg);
+    background-size: cover;
+    background-color: rgb(68, 82, 95);
+    background-blend-mode: soft-light;
+}
+
+/*Estilo boton consultar ahora*/
+main .BotonConsultar {
+    background-color: #1E73BE;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    font-family: serif;
+    color: white;
+    margin-top: 40px;
+}
+
+/*Tamaño legenda dejanos tu consulta*/
+main legend {
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+}
+
+/*Tamaño formulario dejanos tu consulta*/
+main div form {
+    padding: 30px;
+}
+
+/*Estilo del formulario a completar*/
+main div form ul {
+    background-image: url(../img/consulta.jpg);
+    height: 30vw;
+    background-size: cover;
+    background-color: rgb(68, 82, 95);
+    background-blend-mode: soft-light;  
+}
+
+main div form ul li {
+    text-decoration: none;
+    padding: 15px;
+    padding-right: 40px;
+    text-align: right;
+    color: whitesmoke;
+}
+
+main div form ul li input {
+    padding-right: 150px;
+}
+
+main div form ul div {
+
+   margin-left: 1000px;
+   padding: 20px;
+}
+
+/*Tamaño caja para deje su mensaje*/
+main div form ul li #msg { 
+    padding: 50px;
+    padding-left: 110px;
+}
+
+
+/*Estilo Menu de servicios*/
+/*Estilo menu Servicios para celulares*/
+main div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedorServicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; /*Separacion entre columnas y filas*/
+    margin: 1rem 3rem 3rem 3rem;
+}
+
+/*Estilo menu Servicios para tablets*/
+@media screen and (min-width:600px){
+    .contenedorServicios { 
+        height: 70vh;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/*Estilo menu Servicios para web*/
+@media screen and (min-width:1024px){
+    .contenedorServicios { 
+            height: 70vh;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+     }
+  }
+
+
+/*Estilo menu Sobre mi*/
+/* Estilo foto y texto de Sobre-mi */
+.PresentacionFoto {
+   display: flex;
+   height: 550px;
+}
+
+/*alineo el texto */
+main .PresentacionTexto {
+    text-align: center; 
+    padding: 50px;
+}
+
+/*Estilo Nombre Abogada en Sobre-mi*/
+main div h5 {
+    font-size: 3vw;
+    padding-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Estilo descripcion Abogada en Sobre-mi*/
+main div p {
+    font-size: 2vw;
+    padding-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*Estilo Menu Preguntas frecuentes*/
+/*Estilo Main titulo Preguntas frecuentes*/
+main .ContainerPreguntas{
+    padding: 5px 5vw;
+}
+
+main div .PreguntasTitulo {
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-size: 3vw;
+}
+
+/*Estilo texto Preguntas Frecuentes*/
+
+main div div h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2vw;
+}
+/*Estilo Parrafos Preguntas Frecuentes*/
+
+main div div p {
+    text-align: left;
+    padding: 0px 20px;
+    margin-bottom: 30px;
+    font-size: 1.5vw;
+}
+
+
+/* Estilo de footer */
+/* Estilo etiqueta encontranos - redes sociales*/ 
+footer h3 { 
+    text-align: right;
+    font-size: 1.5vw;
+    padding: 15px;
+    padding-right: 28px;
+}
+
+/*Estilo para redes sociales */
+footer {
+    background-color: rgb(240, 237, 237);
+    text-align: end;
+}
+
+footer div {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer .Social {
+    display: flex;
+    height: 3vw;
+    justify-content: end;
+    padding-right: 20px;
+}
+
+/*Estilo para separar las imagenes de redes entre si*/
+footer div img {
+    padding-right: 10px;
+}
+
+
+/*Estilo etiqueta todos los derechos reservados*/
+footer h4 { 
+    text-align: center;
+    font-size: 1vw;
+}
+
+/*Estilo boton volver arriba*/
+footer div a { 
+    text-decoration: none;
+    font-size: 1vw;
+}
+
