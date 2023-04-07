@@ -13,6 +13,7 @@ body {
 }
 
 /* Estilo del header*/
+/*Solo agrego subrayado en web*/
 
 @media screen and (min-width:1024px) {
     header nav div div div .color-menu:hover {
@@ -21,13 +22,12 @@ body {
     }
 }
 
-
+/*tamaño logo abogada*/
 header nav div img {
     height: 70px;
 }
 
 
-/* Estilos de main */
 /*Estilos Generales de main*/
 main div h1 { 
     text-align: center;
@@ -35,6 +35,7 @@ main div h1 {
     color: whitesmoke;
     font-family: serif;
     margin-top: 20px;
+    margin-bottom: 70px;
     text-shadow: 5px 0px 04px rgb(3, 1, 1);
 }
 main h2 { 
@@ -54,6 +55,8 @@ main .Portada {
     flex-wrap: nowrap;
 }
 
+
+
 /*Pagina de INICIO*/
 /* Estilo Portada pagina de Inicio */
 
@@ -64,8 +67,26 @@ main .PortadaInicio {
     background-blend-mode: hard-light;
 }
 
-/* background-color: rgb(95, 68, 94);*/
+/*Estilo boton consultar ahora*/
+main .BotonConsultar {
+    background-color: #1078d3;
+    border-radius: 10px;
+    padding: 15px;
+    text-decoration: none;
+    font-family: serif;
+    color: white;
+    margin-top: 40px;
+}
 
+/* Estilo para el link cuando le pasamos el mouse por arriba */
+
+main .BotonConsultar:hover {
+    background-color: #095496;
+}
+
+main .BotonConsultar:active {
+    border: 1px solid white;
+}
 
 /*Estilo menu CONTACTO*/
 /*Estilo Portada Contacto*/
@@ -74,17 +95,6 @@ main .PortadaContacto {
     background-image: url(../img/contactame.jpg);
     background-size: cover;
 
-}
-
-/*Estilo boton consultar ahora*/
-main .BotonConsultar {
-    background-color: #1E73BE;
-    border-radius: 10px;
-    padding: 15px;
-    text-decoration: none;
-    font-family: serif;
-    color: white;
-    margin-top: 40px;
 }
 
 /*Tamaño legenda dejanos tu consulta*/

@@ -1,0 +1,77 @@
+/*APlico Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* pseudo clase :visited para etiquetas de link */
+
+a {
+    background-color: brown;
+}
+/*Estilo cuando el link no ha sido visitado*/
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Estilo cuando el link ya fue visitado*/
+a:visited {
+    color: red;
+    text-decoration: none;
+}
+
+/* Estilo cuando el link esta siendo activado */
+
+a:active {
+    background-color: green;
+}
+
+/* Estilo para el link cuando le pasamos el mouse por arriba */
+
+a:hover {
+    background-color: blueviolet;
+}
+
+.caja {
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.caja:hover{
+    background-color: antiquewhite;
+}
+
+/* Estilos ejemplo parrafos*/
+/*Le aplico estilos al primer hijo parrafo*/
+.parrafos p:first-child {
+    background-color: red;
+    font-weight: bold;
+}
+
+/*le aplico estilos al ultimo hijo*/ 
+.parrafos p:last-child {
+    background-color: black;
+    color: azure;
+}
+
+.parrafos :nth-child(2) {
+    background-color: blueviolet;
+}
+
+/* Aplico un estilo al tipo que quiero puede ser div,h,p*/
+.parrafoDos div:last-of-type {
+    background-color: blue;
+}
+
+
+
