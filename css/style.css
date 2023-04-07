@@ -14,11 +14,12 @@ body {
 
 /* Estilo del header*/
 
-header nav div div div .color-menu:hover {
-    border-bottom: 2px solid black;
-    color: violet;  
+@media screen and (min-width:1024px) {
+    header nav div div div .color-menu:hover {
+        border-bottom: 2px solid black;
+        color: black;  
+    }
 }
-
 
 
 header nav div img {
@@ -57,10 +58,11 @@ main .Portada {
 main .PortadaInicio {
     background-image: url(../img/edificios.png);
     background-size: cover;
-    background-color: rgb(68, 82, 95);
-    background-blend-mode: soft-light;
+    background-color: rgb(82, 65, 81);
+    background-blend-mode: hard-light;
 }
 
+/* background-color: rgb(95, 68, 94);*/
 
 
 /*Estilo menu CONTACTO*/
@@ -69,7 +71,7 @@ main .PortadaInicio {
 main .PortadaContacto {
     background-image: url(../img/contactame.jpg);
     background-size: cover;
-    background-color: rgb(68, 82, 95);
+    background-color: rgb(99, 90, 112);
     background-blend-mode: soft-light;
 }
 
@@ -101,8 +103,8 @@ main div form ul {
     background-image: url(../img/consulta.jpg);
     height: 30vw;
     background-size: cover;
-    background-color: rgb(68, 82, 95);
-    background-blend-mode: soft-light;  
+    background-color: rgb(82, 65, 81);
+    background-blend-mode: hard-light;  
 }
 
 main div form ul li {
