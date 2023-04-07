@@ -16,12 +16,15 @@ body {
 
 header nav div div div .color-menu:hover {
     border-bottom: 2px solid black;
-    color: black;  
+    color: violet;  
 }
 
+
+
 header nav div img {
-    width: 150px;
+    height: 70px;
 }
+
 
 /* Estilos de main */
 /*Estilos Generales de main*/
