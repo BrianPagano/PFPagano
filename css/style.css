@@ -236,42 +236,59 @@ main div div p {
 
 
 /* Estilo de footer */
+
+.contenedor-footer {
+    display: grid;
+    background-color: rgb(240, 237, 237);
+    grid-template-columns: 70% 30%;
+}
+/*Estilo datos de contacto footer*/
+/*Caja con datos de contacto*/
+
+footer .caja-1 {
+    display: flex;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 3%;
+    align-items: center;
+}
+
+footer div .datos-contacto {
+    margin-left: 6rem;
+}
+
+
+/*caja de redes sociales*/
+footer .caja-2 {
+    margin-top: 15%;
+    margin-left: 40%;
+}
+
+/*caja de derechos reservados y volver arriba*/
+footer .caja-3 {
+    text-align: center;
+    grid-column: 1/4;
+}
+
 /* Estilo etiqueta encontranos - redes sociales*/ 
-footer h3 { 
-    text-align: right;
-    font-size: 1.5vw;
-    padding: 15px;
-    padding-right: 28px;
+footer h6 { 
+    font-size: 20px;
+    text-align: center;
 }
 
 /*Estilo para redes sociales */
-footer {
-    background-color: rgb(240, 237, 237);
-    text-align: end;
-}
-
-footer div {
-    text-align: center;
-    padding-bottom: 10px;
-}
-
 footer .Social {
     display: flex;
-    height: 3vw;
-    justify-content: end;
-    padding-right: 20px;
+    height: 30px;
+    justify-content:center;
+    gap: 10px;
 }
-
-/*Estilo para separar las imagenes de redes entre si*/
-footer div img {
-    padding-right: 10px;
-}
-
 
 /*Estilo etiqueta todos los derechos reservados*/
 footer h4 { 
-    text-align: center;
-    font-size: 1vw;
+    font-size: 10px;
+    color: grey;
+    margin-top: 5px;
 }
 
 /*Estilo boton volver arriba*/
