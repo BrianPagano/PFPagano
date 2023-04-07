@@ -47,26 +47,21 @@
                     <legend>Dejanos tu consulta</legend>
                     <ul>
                         <li>
-                            <label for="">Nombre y Apellido </label>
-                            <input type="text" name="Nombres" id="Nombre">
+                            <input type="text" name="Nombres" id="Nombre" placeholder="Nombre y Apellido">
+                        </li>
+                        <li> 
+                            <input type="tel" id="Phone" placeholder="Telefono">  <!-- tipo telefono-->
                         </li>
                         <li>
-                            <label for="">Telefono/Celular</label>  
-                            <input type="tel" id="Phone">  <!-- tipo telefono-->
+                            <input type="email" id="Email" placeholder="ejemplo@correo.com">  <!-- tipo email para que valide solo Emails-->
                         </li>
                         <li>
-                            <label for="">Email</label>  
-                            <input type="email" id="Email">  <!-- tipo email para que valide solo Emails-->
+                            <input type="text" id="Asunto" placeholder="Asunto">  <!-- tipo email para que valide solo Emails-->
                         </li>
                         <li>
-                            <label for="">Asunto</label>  
-                            <input type="text" id="Asunto">  <!-- tipo email para que valide solo Emails-->
+                            <textarea id="msg" name="user_message" placeholder="Deje su mensaje"></textarea>
                         </li>
-                        <li>
-                            <label for="msg">Deje su mensaje:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </li>
-                        <div>                 
+                        <div class="botones-formulario">                 
                             <input type="reset">
                             <input type="submit"> 
                         </div>                       

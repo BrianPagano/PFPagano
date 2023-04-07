@@ -94,12 +94,10 @@ main .BotonConsultar:active {
 main .PortadaContacto {
     background-image: url(../img/contactame.jpg);
     background-size: cover;
-
 }
 
 /*Tamaño legenda dejanos tu consulta*/
 main legend {
-    text-align: center;
     width: 200px;
     font-size: 20px;
 }
@@ -112,34 +110,34 @@ main div form {
 /*Estilo del formulario a completar*/
 main div form ul {
     background-image: url(../img/consulta.jpg);
-    height: 30vw;
+    height: 70%;
     background-size: cover;
     background-color: rgb(82, 65, 81);
     background-blend-mode: hard-light;  
+    list-style-type: none;
 }
 
 main div form ul li {
-    text-decoration: none;
     padding: 15px;
     padding-right: 40px;
     text-align: right;
-    color: whitesmoke;
 }
 
 main div form ul li input {
-    padding-right: 150px;
+    width: 23rem;
 }
 
-main div form ul div {
-
-   margin-left: 1000px;
-   padding: 20px;
+main div form ul .botones-formulario {
+   display: flex;
+   gap: 1rem;
+   justify-content: end;
+   margin-right: 2.5rem;
 }
 
 /*Tamaño caja para deje su mensaje*/
 main div form ul li #msg { 
-    padding: 50px;
-    padding-left: 110px;
+    width: 23rem;
+    height: 10rem;
 }
 
 
