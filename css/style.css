@@ -235,7 +235,7 @@ main div div p {
 
 .contenedor-footer {
     display: grid;
-    background-color: rgb(140, 106, 179);
+    background-color: rgb(121, 62, 189);
     grid-template-columns: 70% 30%;
     margin-top: 20px;
 }
@@ -253,6 +253,10 @@ footer .caja-1 {
 
 /*Estilo de los p de datos de contacto*/
 
+footer div h6 {
+    font-size: 25px;
+}
+
 footer div p {
     margin-bottom: 0px;
 }
@@ -263,10 +267,8 @@ footer div p span {
 
 
 /*caja de redes sociales*/
-footer .caja-2 {
-    margin-top: 15%;
-    margin-left: 40%;
-}
+/*footer .caja-2 {} por ahora no lo voy a usar*/
+
 
 /*caja de derechos reservados y volver arriba*/
 footer .caja-3 {
@@ -278,9 +280,16 @@ footer .caja-3 {
 /*Estilo para redes sociales */
 footer .Social {
     display: flex;
-    height: 30px;
-    justify-content:center;
+    height: 40px;
     gap: 10px;
+    justify-content: end;
+    margin-right: 1rem;
+    margin-top: 8rem;
+}
+
+footer div div img:hover {
+ background-color: white;
+ border-radius: 100%;
 }
 
 /*Estilo etiqueta todos los derechos reservados*/
@@ -296,6 +305,6 @@ footer h4 {
 footer div a { 
     color: white;
     text-decoration: none;
-    font-size: 1vw;
+    font-size: 12px;
 }
 
