@@ -177,30 +177,73 @@ main div div div div .estilo-lista {
 
 /*Estilo menu Sobre mi*/
 /* Estilo foto y texto de Sobre-mi */
-.PresentacionFoto {
-   display: flex;
-   height: 550px;
-}
 
-/*alineo el texto */
+main img {
+    height: 100vw;
+}
+ /*alineo el texto */
 main .PresentacionTexto {
-    text-align: center; 
-    padding: 50px;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 0px;
 }
 
-/*Estilo Nombre Abogada en Sobre-mi*/
+ /*Estilo Nombre Abogada en Sobre-mi*/
 main div h5 {
-    font-size: 3vw;
+    font-size: 30px;
     padding-bottom: 15px;
-    font-family: 'Times New Roman', Times, serif;
+ }
+
+ /*Estilo descripcion Abogada en Sobre-mi*/
+main div p {
+     font-size: 18px;
+     padding-bottom: 15px;
 }
 
-/*Estilo descripcion Abogada en Sobre-mi*/
-main div p {
-    font-size: 2vw;
-    padding-bottom: 15px;
-    font-family: 'Times New Roman', Times, serif;
+/*Estilo para tablets sobre mi*/
+@media screen and (min-width:600px) {
+    .PresentacionFoto {
+        display: flex;
+        height: auto;
+    }
+
+    main img {
+        height: 50vw;
+    }
+
+    main .PresentacionTexto {
+        padding: 70px;
+        padding-bottom: 0px;
+    }
 }
+
+/*Estilo para web sobre mi*/
+@media screen and (min-width:1024px) {
+
+    main img {
+        height: 40vw;
+    }
+
+    main .PresentacionTexto {
+        padding-left: 120px;
+        padding-bottom: 120px;
+        padding-bottom: 0px;
+        padding-top: 100px;
+        
+    }
+
+    /*Estilo Nombre Abogada en Sobre-mi*/
+    main div h5 {
+        font-size: 40px;
+    }
+
+    /*Estilo descripcion Abogada en Sobre-mi*/
+    main div p {
+        font-size: 25px;
+}
+
+}
+
 
 
 /*Estilo Menu Preguntas frecuentes*/
