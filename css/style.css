@@ -154,6 +154,7 @@ main div img {
     margin: 1rem 3rem 3rem 3rem;
 }
 
+
 main div div div div .estilo-lista {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -162,7 +163,7 @@ main div div div div .estilo-lista {
 @media screen and (min-width:600px){
     .contenedorServicios { 
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 0.33fr);
     }
 }
 
@@ -170,7 +171,7 @@ main div div div div .estilo-lista {
 @media screen and (min-width:1024px){
     .contenedorServicios { 
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 0.5fr);
      }
   }
 
