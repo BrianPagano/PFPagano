@@ -155,8 +155,14 @@ main div img {
 }
 
 
-main div div div div .estilo-lista {
+main div div div div div .estilo-lista {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main div div div div div ul .titulo-comercial {
+    margin-top: 10px;
+    list-style-type: none;
+    font-weight: bold;
 }
 
 /*Estilo menu Servicios para tablets*/
