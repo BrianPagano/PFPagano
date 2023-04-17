@@ -38,6 +38,7 @@ main div h1 {
     margin-bottom: 70px;
     text-shadow: 5px 0px 04px rgb(3, 1, 1);
 }
+
 main h2 { 
     text-align: center;
     font-size: 2vw;
@@ -69,7 +70,7 @@ main .portada-inicio {
 }
 
 /*Estilo boton consultar ahora*/
-main .BotonConsultar {
+main .boton-consultar {
     background-color: #1078d3;
     border-radius: 10px;
     padding: 15px;
@@ -81,24 +82,23 @@ main .BotonConsultar {
 
 /* Estilo para el link cuando le pasamos el mouse por arriba */
 
-main .BotonConsultar:hover {
+main .boton-consultar:hover {
     background-color: #095496;
 }
 
-main .BotonConsultar:active {
+main .boton-consultar:active {
     border: 1px solid white;
 }
 
 /*Estilo menu CONTACTO*/
 /*Estilo Portada Contacto*/
 
-main .PortadaContacto {
+main .portada-contacto {
     background-image: url(../img/contactame.jpg);
     background-size: cover;
     margin-bottom:  30px;
 }
 
-/*Tamaño formulario dejanos tu consulta*/
 
 /*Estilo del formulario a completar*/
 main div form fieldset {
@@ -166,7 +166,7 @@ main div img {
     object-fit: cover;
 }
 
-.contenedorServicios {
+.contenedor-servicios {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem; /*Separacion entre columnas y filas*/
@@ -186,7 +186,7 @@ main div div div div div ul .titulo-comercial {
 
 /*Estilo menu Servicios para tablets*/
 @media screen and (min-width:600px){
-    .contenedorServicios { 
+    .contenedor-servicios { 
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 0.33fr);
     }
@@ -194,7 +194,7 @@ main div div div div div ul .titulo-comercial {
 
 /*Estilo menu Servicios para web*/
 @media screen and (min-width:1024px){
-    .contenedorServicios { 
+    .contenedor-servicios { 
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 0.5fr);
      }
@@ -271,15 +271,13 @@ main div p {
 }
 
 
-
 /*Estilo Menu Preguntas frecuentes*/
 /*Estilo Main titulo Preguntas frecuentes*/
-
 .preguntas-frecuentes {
     background-color: rgba(228, 214, 177, 0.068);
 }
 
-main .PreguntasTitulo {
+main .preguntas-titulo {
     text-align: center;
     color: black;
     font-weight: bold;
@@ -288,7 +286,7 @@ main .PreguntasTitulo {
     font-size: 30px;
 }
 
-main .ContainerPreguntas { 
+main .container-preguntas { 
     height: auto;
     text-align: center;
 }    
@@ -314,11 +312,11 @@ main div div h3 {
 
 /*Estilo preguntas frecuentes para web*/
 @media screen and (min-width:1024px){
-    main .PreguntasTitulo {
+    main .preguntas-titulo {
         font-size: 40px;
     }
 
-    main .ContainerPreguntas { 
+    main .container-preguntas { 
         display: grid;
         grid-template-columns: repeat(2,50%);
     }    
