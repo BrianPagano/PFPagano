@@ -122,7 +122,7 @@ main div form ul li {
 }
 
 main div form ul li input {
-    width: 23rem;
+    width: 18rem;
 }
 
 main div form ul .botones-formulario {
@@ -130,13 +130,27 @@ main div form ul .botones-formulario {
    gap: 1rem;
    justify-content: end;
    margin-right: 2.5rem;
+   padding-bottom: 10px;
 }
 
 /*Tamaño caja para deje su mensaje*/
 main div form ul li #msg { 
-    width: 23rem;
+    width: 18rem;
     height: 10rem;
 }
+
+/*Estilo menu Servicios para tablets*/
+@media screen and (min-width:1024px){
+    main div form ul li input {
+        width: 23rem;
+    }
+
+    main div form ul li #msg { 
+        width: 23rem;
+        height: 10rem;
+    }
+}
+
 
 
 /*Estilo Menu de servicios*/
@@ -255,12 +269,6 @@ main div p {
 
 /*Estilo Menu Preguntas frecuentes*/
 /*Estilo Main titulo Preguntas frecuentes*/
-.ContainerPreguntas{
-    height: auto;
-    display: grid;
-    text-align: center;
-    grid-template-columns: repeat(2,50%);
-}
 
 main .PreguntasTitulo {
     text-align: center;
@@ -268,34 +276,50 @@ main .PreguntasTitulo {
     font-weight: bold;
     padding-top: 40px;
     padding-bottom: 50px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
-/*Estilo texto Preguntas Frecuentes*/
+main .ContainerPreguntas { 
+    height: auto;
+    text-align: center;
+}    
 
+/*Estilo texto Preguntas Frecuentes*/
 main div div h3 {
     color: black;
     text-align: start;
     margin: 0px 20px;
     padding-left: 40px;
     padding-right: 40px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
-/*Estilo Parrafos Preguntas Frecuentes*/
 
-main div div p {
-    text-align: start;
-    margin: 07px 20px;
-    margin-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 20px;
-    font-size: 20px;
+ /*Estilo Parrafos Preguntas Frecuentes*/
+ main div div p {
+     text-align: start;
+     margin: 07px 20px;
+     margin-bottom: 15px;
+     padding-left: 40px;
+     padding-right: 20px;
+     font-size: 15px;
+ }
+
+/*Estilo preguntas frecuentes para web*/
+@media screen and (min-width:1024px){
+    main .PreguntasTitulo {
+        font-size: 40px;
+    }
+
+    main .ContainerPreguntas { 
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+    }    
 }
 
 
 /* Estilo de footer */
-
+/*Estilo general de footer*/
 .contenedor-footer {
     background-color: rgb(192, 172, 214);
     text-align: center;
@@ -315,7 +339,6 @@ footer .Social {
 
 
 /*Caja con datos de contacto*/
-
 footer .caja-1 {
     font-size: 70%;
     margin-top: 20px;
@@ -325,12 +348,11 @@ footer .caja-1 {
 }
 
 
-/*Estilo de los p de datos de contacto*/
-
 footer div h6 {
     font-size: 150%;
 }
 
+/*Estilo de los p de datos de contacto*/
 footer div p {
     margin-bottom: 0px;
 }
