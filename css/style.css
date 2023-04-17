@@ -46,7 +46,7 @@ main h2 {
 }
 
 /*Estilos para portadas de Main*/
-main .Portada {
+main .portada {
     height: 500px;
     display: flex;
     align-items: center;
@@ -60,7 +60,7 @@ main .Portada {
 /*Pagina de INICIO*/
 /* Estilo Portada pagina de Inicio */
 
-main .PortadaInicio {
+main .portada-inicio {
     background-image: url(../img/edificios.png);
     background-size: cover;
     background-color: rgb(82, 65, 81);
@@ -208,7 +208,7 @@ main img {
     height: 100vw;
 }
  /*alineo el texto */
-main .PresentacionTexto {
+main .presentacion-texto {
     text-align: center;
     padding: 30px;
     padding-bottom: 0px;
@@ -228,7 +228,7 @@ main div p {
 
 /*Estilo para tablets sobre mi*/
 @media screen and (min-width:600px) {
-    .PresentacionFoto {
+    .presentacion-foto{
         display: flex;
         height: auto;
     }
@@ -237,7 +237,7 @@ main div p {
         height: 50vw;
     }
 
-    main .PresentacionTexto {
+    main .presentacion-texto {
         padding: 70px;
         padding-bottom: 0px;
     }
@@ -250,7 +250,7 @@ main div p {
         height: 40vw;
     }
 
-    main .PresentacionTexto {
+    main .presentacion-texto {
         padding-left: 120px;
         padding-bottom: 120px;
         padding-bottom: 0px;
@@ -344,7 +344,7 @@ footer div .contenedor-direcciones {
     margin-bottom: 10px;
 }
 
-footer .Social {
+footer .social {
     display: flex;
     height: 25px;
     gap: 10px;
@@ -423,7 +423,7 @@ footer div a {
 
     
      /*caja de redes sociales desde tablet*/
-    footer .Social {
+    footer .social {
         display: flex;
         height: 40px;
         gap: 10px;
