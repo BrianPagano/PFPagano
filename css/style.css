@@ -13,8 +13,12 @@ body {
 }
 
 /* Estilo del header*/
-/*Solo agrego subrayado en web*/
+/*tamaño logo abogada*/
+header nav div img {
+    height: 70px;
+}
 
+/*Solo agrego subrayado en web*/
 @media screen and (min-width:1024px) {
     header nav div div div .color-menu:hover {
         border-bottom: 2px solid black;
@@ -22,13 +26,9 @@ body {
     }
 }
 
-/*tamaño logo abogada*/
-header nav div img {
-    height: 70px;
-}
-
 
 /*Estilos Generales de main*/
+/*Estilo h1*/
 main div h1 { 
     text-align: center;
     font-size: 50px;
@@ -39,6 +39,7 @@ main div h1 {
     text-shadow: 5px 0px 04px rgb(3, 1, 1);
 }
 
+/*Estilo h1*/
 main h2 { 
     text-align: center;
     font-size: 2vw;
@@ -326,7 +327,7 @@ main div div h3 {
 /* Estilo de footer */
 /*Estilo general de footer*/
 .contenedor-footer {
-    background-color: rgb(192, 172, 214);
+    background: linear-gradient(rgb(192, 172, 214),rgba(86, 16, 165, 0.774));
     text-align: center;
 }
 
@@ -335,7 +336,6 @@ main div div h3 {
     text-align: center;
     margin-top: 20px;
 }
-
 
 /*separacion de direcciones en footer de telefono/email*/
 footer div .contenedor-direcciones {
@@ -355,7 +355,6 @@ footer .caja-1 {
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 
 footer div h6 {
     font-size: 150%;
@@ -383,10 +382,10 @@ footer .caja-3 {
 
     /*Estilo etiqueta copyright*/
 footer h4 {
-     background-color: rgb(30, 12, 54);
+     background-color: rgb(36, 8, 71);
      font-size: 10px;
      color: rgba(255, 255, 255, 0.651);
-     padding: 10px;
+     padding: 7px;
      margin-bottom: 0px;
     }
  
