@@ -18,11 +18,12 @@ header nav div img {
     height: 70px;
 }
 
-/*Solo agrego subrayado en web*/
+/*agrego animaciones en web*/
 @media screen and (min-width:1024px) {
     header nav div div div .color-menu:hover {
-        border-bottom: 2px solid black;
         color: black;  
+        transform: scale(1.1);
+        transition: transform .3s;
     }
 }
 
@@ -73,12 +74,12 @@ main .portada-inicio {
 /*Estilo boton consultar ahora*/
 main .boton-consultar {
     background-color: #1078d3;
+    border: 0;
     border-radius: 10px;
     padding: 15px;
     text-decoration: none;
     font-family:'Times New Roman', Times, serif;
     color: white;
-    margin-top: 40px;
 }
 
 /* Estilo para el link cuando le pasamos el mouse por arriba */
