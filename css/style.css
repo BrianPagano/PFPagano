@@ -327,12 +327,12 @@ main div div h3 {
 /* Estilo de footer */
 /*Estilo general de footer*/
 .contenedor-footer {
-    background: linear-gradient(rgb(192, 172, 214),rgba(86, 16, 165, 0.774));
+    background: linear-gradient(to right,rgba(192, 172, 214, 0.89),rgba(76, 15, 190, 0.664));
     text-align: center;
 }
 
 .contenedor-footer-dos {
-    background-color: rgb(192, 172, 214);
+    background: linear-gradient(to right,rgba(192, 172, 214, 0.89),rgba(76, 15, 190, 0.664));
     text-align: center;
     margin-top: 20px;
 }
