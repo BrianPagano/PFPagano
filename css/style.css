@@ -328,12 +328,12 @@ main div div h3 {
 /* Estilo de footer */
 /*Estilo general de footer*/
 .contenedor-footer {
-    background: linear-gradient(to right,rgba(192, 172, 214, 0.89),rgba(76, 15, 190, 0.664));
+    background: linear-gradient(rgba(192, 172, 214, 0.89),rgba(76, 15, 190, 0.664));
     text-align: center;
 }
 
 .contenedor-footer-dos {
-    background: linear-gradient(to right,rgba(192, 172, 214, 0.89),rgba(76, 15, 190, 0.664));
+    background: linear-gradient(rgba(192, 172, 214, 0.89),rgba(76, 15, 190, 0.664));
     text-align: center;
     margin-top: 20px;
 }
@@ -408,12 +408,14 @@ footer div a {
         display: grid;
         text-align: start;
         grid-template-columns: 70% 30%;
+        background: linear-gradient(to right,rgba(192, 172, 214, 0.89),rgba(76, 15, 190, 0.664));
     }
 
     .contenedor-footer-dos {
         display: grid;
         text-align: start;
         grid-template-columns: 70% 30%;
+        background: linear-gradient(to right,rgba(192, 172, 214, 0.89),rgba(76, 15, 190, 0.664));
     }
 
     footer .caja-1 {
@@ -436,7 +438,3 @@ footer div a {
         height: 40px;
     }
 }
-
-
-
-
