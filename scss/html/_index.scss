@@ -1,0 +1,36 @@
+//variables
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/*Estilos de home*/
+/*Estilo de portada del home*/
+main {
+    .portada-inicio {
+        @include portadas;
+        background-image: url(../img/edificios.png);
+        background-size: cover;
+        background-color: $color-fotos;
+        background-blend-mode: hard-light;
+        margin-bottom: 15px;
+    }
+    //Estilo boton consultar
+    .boton-consultar {
+        background-color: #1078d3;
+        border: 0;
+        border-radius: 10px;
+        padding: 15px;
+        text-decoration: none;
+        font-family:'Times New Roman', Times, serif;
+        color: white;
+    }
+    //Estilo para el boton cuando pasamos por arriba
+    .boton-comsultar:hover {
+        background-color: #095496;
+    }
+    //Estilo cuando clickeamos el boton
+    .boton-consultar:active {
+        border: 1px solid white;
+    }
+}
+
+

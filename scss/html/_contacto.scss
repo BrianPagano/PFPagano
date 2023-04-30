@@ -1,0 +1,74 @@
+//variables
+@import "../utilidades/variables";
+
+/*Estilo menu de contacto*/
+//Estilo portada de contacto
+
+main {
+    .portada-contacto {
+        @include portadas;
+        background-image: url(../img/contactame.jpg);
+        background-size: cover;
+        margin-bottom:  30px;
+    }
+    div {
+        form {
+            fieldset {
+                background-image: url(../img/consulta.jpg);
+                height: 70%;
+                color: whitesmoke;
+                background-size: cover;
+                background-color: $color-fotos;
+                background-blend-mode: hard-light;
+            }
+            legend {
+                margin-left: 30px;
+                margin-top: 20px;
+                font-size: 35px;
+                text-shadow: 5px 0px 04px rgb(3, 1, 1);
+            }
+            ul{
+               list-style-type: none;
+               .botones-formulario {
+                 display: flex;
+                 gap: 1rem;
+                 justify-content: end;
+                 margin-right: 2.5rem;
+                 padding-bottom: 10px;
+               }
+               li {
+                padding: 15px;
+                padding-right: 40px;
+                text-align: right;
+                #msg {
+                    width: 18rem;
+                    height: 10rem;
+                }
+                input {
+                    width: 18rem;
+                }
+               }
+            }
+        }
+    }
+}
+
+/*Estilo menu contacto para tablets*/
+@media screen and (min-width:1024px){
+    main {
+        div {
+            form {
+                ul {
+                    li {
+                        input {
+                            width: 23rem;
+                        }
+                        #msg {
+                            width: 23rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

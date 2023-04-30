@@ -1,0 +1,23 @@
+// Hoja de estilos generales de sass
+/* aplicamos el reset */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Estilo general de body*/
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+//variables
+
+@import "html/header";
+@import "html/footer";
+@import "html/index";
+@import "html/servicios";
+@import "html/sobre-mi";
+@import "html/pregfreq";
+@import "html/contacto";
+

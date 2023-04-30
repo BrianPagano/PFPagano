@@ -1,0 +1,72 @@
+//variables
+@import "../utilidades/variables";
+
+/*Estilo solapa Sobre mi*/
+/*Estilo para celulares sobre mi*/
+
+main {
+    //Estilo foto
+    img {
+        height: 100vw;  
+    }
+    //alineo texto
+    .presentacion-texto {
+        text-align: center;
+        padding: 30px;
+        padding-bottom: 0px;
+    }
+    //estilo nombre de abogada en sobre mi
+    div {
+        h4 {
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+/*Estilo para tablet sobre mi */
+@media screen and (min-width:600px) {
+    .presentacion-foto{
+        display: flex;
+        height: auto;
+    }
+
+    main {
+        img {
+            height: 50vw;
+        }
+        .presentacion-texto{
+            padding: 70px;
+            padding-bottom: 0px;
+        }
+    }
+
+}
+
+/*Estilo para web sobre mi*/
+@media screen and (min-width:1024px) {
+
+    main{
+        img {
+            height: 40vw;
+        }
+        .presentacion-texto {
+            padding-left: 120px;
+            padding-bottom: 120px;
+            padding-bottom: 0px;
+            padding-top: 100px;
+        }
+        div {
+            h4 {
+                font-size: 40px;
+            }
+            p {
+                font-size: 25px;
+            }
+        }
+    } 
+}

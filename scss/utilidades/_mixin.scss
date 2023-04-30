@@ -1,0 +1,12 @@
+//Nos sirve para poder copiar y pegar codigo 
+
+//mixin sin parametros
+
+@mixin portadas {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+}

@@ -1,0 +1,56 @@
+//variables
+@import "../utilidades/variables";
+
+/*Estilo menu preguntas frecuentes*/
+
+.preguntas-frecuentes {
+    background-color: rgba(228, 214, 177, 0.096);
+}
+
+main {
+    .preguntas-titulo {
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        font-size: 30px;
+    }
+    .container-preguntas {
+        height: auto;
+        text-align: center;
+    }
+    //Estilo texto preguntas frecuentes
+    div {
+        div {
+            h3 {
+                color: black;
+                text-align: start;
+                padding-left: 40px;
+                padding-right: 40px;
+                font-size: 20px;
+            }
+            p {
+                text-align: start;
+                margin-bottom: 15px;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-bottom: 0px;
+                font-size: 15px;  
+            }
+        }
+    }
+}
+
+/*Estilo preguntas frecuentes para web*/
+@media screen and (min-width:1024px){
+    main {
+        .preguntas-titulo {
+            font-size: 40px;
+        }
+        .container-preguntas{
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+        }
+    }
+}
