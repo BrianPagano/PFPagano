@@ -22,7 +22,7 @@ main {
                 background-blend-mode: hard-light;
             }
             legend {
-                margin-left: 30px;
+                text-align: center;
                 margin-top: 20px;
                 font-size: 35px;
                 text-shadow: 5px 0px 04px rgb(3, 1, 1);
@@ -32,14 +32,14 @@ main {
                .botones-formulario {
                  display: flex;
                  gap: 1rem;
-                 justify-content: end;
+                 justify-content: center;
                  margin-right: 2.5rem;
                  padding-bottom: 10px;
                }
                li {
                 padding: 15px;
                 padding-right: 40px;
-                text-align: right;
+                text-align: center;
                 #msg {
                     width: 18rem;
                     height: 10rem;

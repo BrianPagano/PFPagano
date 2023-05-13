@@ -241,7 +241,7 @@ main div div h3 {
 
 main div div p {
   text-align: start;
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 0px;
@@ -276,7 +276,7 @@ main div form fieldset {
   background-blend-mode: hard-light; }
 
 main div form legend {
-  margin-left: 30px;
+  text-align: center;
   margin-top: 20px;
   font-size: 35px;
   text-shadow: 5px 0px 4px #030101; }
@@ -286,13 +286,13 @@ main div form ul {
   main div form ul .botones-formulario {
     display: flex;
     gap: 1rem;
-    justify-content: end;
+    justify-content: center;
     margin-right: 2.5rem;
     padding-bottom: 10px; }
   main div form ul li {
     padding: 15px;
     padding-right: 40px;
-    text-align: right; }
+    text-align: center; }
     main div form ul li #msg {
       width: 18rem;
       height: 10rem; }
