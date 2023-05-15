@@ -13,7 +13,6 @@ main {
     .presentacion-texto {
         text-align: center;
         padding: 30px;
-        padding-bottom: 0px;
     }
     //estilo nombre de abogada en sobre mi
     div {
@@ -21,6 +20,7 @@ main {
             font-size: 30px;
             padding-bottom: 15px;
             color: black;
+            font-weight: bold;
         }
         p {
             font-size: 18px;
@@ -31,18 +31,15 @@ main {
 
 /*Estilo para tablet sobre mi */
 @media screen and (min-width:600px) {
-    .presentacion-foto{
-        display: flex;
-        height: auto;
-    }
 
     main {
-        img {
-            height: 50vw;
+        .presentacion-texto {
+            padding: 40px;
         }
-        .presentacion-texto{
-            padding: 70px;
-            padding-bottom: 0px;
+        div {
+            .nombre-abogada {
+                font-size: 35px;   
+            }
         }
     }
 
@@ -50,23 +47,23 @@ main {
 
 /*Estilo para web sobre mi*/
 @media screen and (min-width:1024px) {
+    .presentacion-foto{
+        display: flex;
+        height: auto;
+    }
 
     main{
         img {
             height: 40vw;
         }
-        .presentacion-texto {
-            padding-left: 120px;
-            padding-bottom: 120px;
-            padding-bottom: 0px;
-            padding-top: 100px;
-        }
+
         div {
-            h4 {
-                font-size: 40px;
+            .nombre-abogada {
+                font-size: 3vw; 
+                padding-top: 20px;  
             }
             p {
-                font-size: 25px;
+                font-size: 1.8vw;
             }
         }
     } 

@@ -152,9 +152,11 @@ main div img {
   object-fit: cover; }
 
 main .titulo-servicios {
-  font-family: sans-serif;
-  font-size: 30px;
-  text-align: center; }
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px; }
 
 main .contenedor-servicios {
   display: grid;
@@ -166,12 +168,16 @@ main .contenedor-servicios {
 @media screen and (min-width: 600px) {
   main .contenedor-servicios {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 0.33fr); } }
+    grid-template-rows: repeat(3, 0.33fr); }
+  main .titulo-servicios {
+    font-size: 30px; } }
 
 @media screen and (min-width: 1024px) {
   main .contenedor-servicios {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 0.5fr); } }
+    grid-template-rows: repeat(2, 0.5fr); }
+  main .titulo-servicios {
+    font-size: 35px; } }
 
 /*Estilo solapa Sobre mi*/
 /*Estilo para celulares sobre mi*/
@@ -180,13 +186,13 @@ main img {
 
 main .presentacion-texto {
   text-align: center;
-  padding: 30px;
-  padding-bottom: 0px; }
+  padding: 30px; }
 
 main div .nombre-abogada {
   font-size: 30px;
   padding-bottom: 15px;
-  color: black; }
+  color: black;
+  font-weight: bold; }
 
 main div p {
   font-size: 18px;
@@ -194,28 +200,23 @@ main div p {
 
 /*Estilo para tablet sobre mi */
 @media screen and (min-width: 600px) {
+  main .presentacion-texto {
+    padding: 40px; }
+  main div .nombre-abogada {
+    font-size: 35px; } }
+
+/*Estilo para web sobre mi*/
+@media screen and (min-width: 1024px) {
   .presentacion-foto {
     display: flex;
     height: auto; }
   main img {
-    height: 50vw; }
-  main .presentacion-texto {
-    padding: 70px;
-    padding-bottom: 0px; } }
-
-/*Estilo para web sobre mi*/
-@media screen and (min-width: 1024px) {
-  main img {
     height: 40vw; }
-  main .presentacion-texto {
-    padding-left: 120px;
-    padding-bottom: 120px;
-    padding-bottom: 0px;
-    padding-top: 100px; }
-  main div h4 {
-    font-size: 40px; }
+  main div .nombre-abogada {
+    font-size: 3vw;
+    padding-top: 20px; }
   main div p {
-    font-size: 25px; } }
+    font-size: 1.8vw; } }
 
 /*Estilo menu preguntas frecuentes*/
 .preguntas-frecuentes {
