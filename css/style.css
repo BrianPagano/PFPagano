@@ -21,17 +21,6 @@ header nav div img {
     transform: scale(1.1);
     transition: transform .3s; } }
 
-/*Estilo generales para main*/
-/*Estilo h1*/
-main div h1 {
-  text-align: center;
-  font-size: 50px;
-  color: whitesmoke;
-  font-family: serif;
-  margin-top: 20px;
-  margin-bottom: 70px;
-  text-shadow: 5px 0px 4px #030101; }
-
 .contenedor-footer, .contenedor-footer-dos {
   background: linear-gradient(rgba(42, 35, 141, 0.267), rgba(42, 35, 141, 0.753));
   text-align: center; }
@@ -51,7 +40,7 @@ footer div a {
   footer div a img {
     height: 25px; }
 
-footer div h5 {
+footer div h2 {
   font-size: 150%; }
 
 footer div p {
@@ -78,7 +67,7 @@ footer .caja-3 {
   text-align: center;
   grid-column: 1/4; }
 
-footer h2 {
+footer h3 {
   background-color: #2A2F4F;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.651);
@@ -124,7 +113,16 @@ main .portada-inicio {
   background-blend-mode: hard-light;
   margin-bottom: 15px; }
 
-main .boton-consultar {
+main div div .titulo-portada {
+  text-align: center;
+  font-size: 50px;
+  color: whitesmoke;
+  font-family: serif;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  text-shadow: 5px 0px 4px #030101; }
+
+main div div .boton-consultar {
   background-color: #1078d3;
   border: 0;
   border-radius: 10px;
@@ -133,26 +131,13 @@ main .boton-consultar {
   font-family: 'Times New Roman', Times, serif;
   color: white; }
 
-main .boton-comsultar:hover {
+main div div .boton-comsultar:hover {
   background-color: #095496; }
 
-main .boton-consultar:active {
+main div div .boton-consultar:active {
   border: 1px solid white; }
 
 /*Estilo solapa Mis servicios*/
-/*Estilo menu servicios para celulares*/
-main div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-.contenedor-servicios {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  /*Separacion entre columnas y filas*/
-  margin: 1rem 3rem 3rem 3rem; }
-
 main div div div div div .estilo-lista {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
@@ -161,15 +146,30 @@ main div div div div div ul .titulo-comercial {
   list-style-type: none;
   font-weight: bold; }
 
-/*Estilo menu Servicios para tablets*/
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+main .titulo-servicios {
+  font-family: sans-serif;
+  font-size: 30px;
+  text-align: center; }
+
+main .contenedor-servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  /*Separacion entre columnas y filas*/
+  margin: 1rem 3rem 3rem 3rem; }
+
 @media screen and (min-width: 600px) {
-  .contenedor-servicios {
+  main .contenedor-servicios {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 0.33fr); } }
 
-/*Estilo menu Servicios para web*/
 @media screen and (min-width: 1024px) {
-  .contenedor-servicios {
+  main .contenedor-servicios {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 0.5fr); } }
 
@@ -183,9 +183,10 @@ main .presentacion-texto {
   padding: 30px;
   padding-bottom: 0px; }
 
-main div h4 {
+main div .nombre-abogada {
   font-size: 30px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  color: black; }
 
 main div p {
   font-size: 18px;

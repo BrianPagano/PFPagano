@@ -17,9 +17,10 @@ main {
     }
     //estilo nombre de abogada en sobre mi
     div {
-        h4 {
+        .nombre-abogada {
             font-size: 30px;
             padding-bottom: 15px;
+            color: black;
         }
         p {
             font-size: 18px;
