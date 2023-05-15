@@ -1,5 +1,7 @@
 //variables
 @import "../utilidades/variables";
+//mixin
+@import "../utilidades/mixin";
 
 /*Estilo menu de contacto*/
 //Estilo portada de contacto
@@ -33,7 +35,6 @@ main {
                  display: flex;
                  gap: 1rem;
                  justify-content: center;
-                 margin-right: 2.5rem;
                  padding-bottom: 10px;
                }
                li {

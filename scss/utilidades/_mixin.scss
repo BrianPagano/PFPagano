@@ -10,3 +10,12 @@
     justify-content: center;
     flex-wrap: nowrap;
 }
+
+@mixin titulos {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-size: 30px;
+    padding-top: 30px;
+}

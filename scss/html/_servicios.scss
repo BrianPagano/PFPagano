@@ -1,3 +1,8 @@
+//mixin para titulos
+@import "../utilidades/mixin";
+//variables
+@import "../utilidades/variables";
+
 /*Estilo solapa Mis servicios*/
 //Estilo menu servicios para celulares
 main {
@@ -30,11 +35,7 @@ main {
     }
 
     .titulo-servicios {
-        text-align: center;
-        color: black;
-        font-weight: bold;
-        font-size: 20px;
-        padding-bottom: 10px;
+        @include titulos;
     }
 
     .contenedor-servicios {
@@ -45,26 +46,28 @@ main {
         margin: 1rem 3rem 3rem 3rem;
     }
 
-    //Estilo menu Servicios para tablets
+}
 
-    @media screen and (min-width:600px) {
+//Estilo menu Servicios para tablets
+
+@media screen and (min-width:600px) {
+    main {
         .contenedor-servicios {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 0.33fr);
         }
-        .titulo-servicios {
-            font-size: 30px;
-        }
     }
+}
 
-    //Estilo menu Servicios para web
-    @media screen and (min-width:1024px) {
+//Estilo menu Servicios para web
+@media screen and (min-width:1024px) {
+    main {
+        .titulo-servicios {
+            font-size: $titulo-web;
+        }
         .contenedor-servicios {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 0.5fr);
-        }
-        .titulo-servicios {
-            font-size: 35px;
         }
     }
 }

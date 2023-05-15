@@ -1,3 +1,8 @@
+//Extend para titulos
+@import "../utilidades/mixin";
+//variables
+@import "../utilidades/variables";
+
 /*Estilo menu preguntas frecuentes*/
 
 .preguntas-frecuentes {
@@ -6,12 +11,7 @@
 
 main {
     .preguntas-titulo {
-        text-align: center;
-        color: black;
-        font-weight: bold;
-        padding-top: 40px;
-        padding-bottom: 50px;
-        font-size: 30px;
+       @include titulos;
     }
     .container-preguntas {
         height: auto;
@@ -20,7 +20,7 @@ main {
     //Estilo texto preguntas frecuentes
     div {
         div {
-            h3 {
+            .preguntas {
                 color: black;
                 text-align: start;
                 padding-left: 40px;
@@ -42,12 +42,13 @@ main {
 /*Estilo preguntas frecuentes para web*/
 @media screen and (min-width:1024px){
     main {
-        .preguntas-titulo {
-            font-size: 40px;
-        }
         .container-preguntas{
             display: grid;
             grid-template-columns: repeat(2,50%);
+        }
+
+        .preguntas-titulo {
+            font-size: $titulo-web;            
         }
     }
 }
