@@ -100,6 +100,26 @@ footer h3 {
 
 /*Estilos de home*/
 /*Estilo de portada del home*/
+main .btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 120px;
+  right: 30px;
+  background: #00BE21;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100; }
+
+main .btn-wsp:hover {
+  text-decoration: none;
+  color: #00BE21;
+  background-color: white; }
+
 main .portada-inicio {
   height: 500px;
   display: flex;
@@ -136,6 +156,11 @@ main div div .boton-comsultar:hover {
 
 main div div .boton-consultar:active {
   border: 1px solid white; }
+
+/*Aplico formato para el boton de whatsapp en web*/
+@media screen and (min-width: 1024px) {
+  main .btn-wsp {
+    bottom: 200px; } }
 
 /*Estilo solapa Mis servicios*/
 main div div div div div .estilo-lista {
